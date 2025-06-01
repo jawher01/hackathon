@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.e2etests.automation.utils.ConfigFileReader;
+
 import com.e2etests.automation.utils.Setup;
 
 public class AgencePage {
-	private ConfigFileReader configFileReader;
+
 
 	/** @FindBy **/
 	@FindBy(how = How.ID, using = "sidenav-title-agences")
@@ -32,7 +32,7 @@ public class AgencePage {
 
 	public AgencePage() {
 		PageFactory.initElements(Setup.getDriver(), this);
-		this.configFileReader = new ConfigFileReader();
+		
 	}
 
 	public void clickOnMenuAgence() {

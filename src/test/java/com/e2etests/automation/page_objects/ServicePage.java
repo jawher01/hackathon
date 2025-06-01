@@ -8,18 +8,23 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.e2etests.automation.utils.Setup;
 
-public class DepartementPage {
+
+
+
+public class ServicePage {
+
+	
 
 
 	/** @FindBy **/
-	@FindBy(how = How.ID, using = "sidenav-title-departements")
-	public static WebElement menuDepartement;
+	@FindBy(how = How.ID, using = "sidenav-title-services")
+	public static WebElement menuService;
 
 	@FindBy(how = How.ID, using = "add")
-	public static WebElement addDepartement;
+	public static WebElement addService;
 
 	@FindBy(how = How.ID, using = "name")
-	public static WebElement nameDepartement;
+	public static WebElement nameService;
 	
 	@FindBy(how = How.ID, using = "size-small-standard-0")
 	public static WebElement selectAgence1;
@@ -27,27 +32,27 @@ public class DepartementPage {
 	@FindBy(how = How.ID, using = "size-small-standard-0-option-2")
 	public static WebElement selectAgence2;
 	
-	@FindBy(how = How.ID, using = "submit-add-department-button")
+	@FindBy(how = How.ID, using = "confirm-add-service-button")
 	public static WebElement btnAjout;
 
 	@FindBy(how = How.ID, using = "swal2-title")
 	public static WebElement succes;
-
-	public DepartementPage() {
+	
+	public ServicePage() {
 		PageFactory.initElements(Setup.getDriver(), this);
 		
 	}
 	
-	public void clickOnMenuDepartement() {
-		menuDepartement.click();
+	public void clickOnMenuService() {
+		menuService.click();
 	}
 	
-	public void clickOnAjoutDepartement() {
-		addDepartement.click();
+	public void clickOnAjoutService() {
+		addService.click();
 	}
 	
-	public void FillNameDepartement(String name) {
-		nameDepartement.sendKeys(name);
+	public void FillNameService(String name) {
+		nameService.sendKeys(name);
 	}
 	
 	public void clickOnAjoutAagence() {
@@ -58,6 +63,5 @@ public class DepartementPage {
 	public void clickOnBtnAjout() {
 		btnAjout.click();
 	}
-	
 	
 }

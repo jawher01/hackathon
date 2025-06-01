@@ -9,7 +9,7 @@ Feature: je verifier l ajout de l departement
      And je click sur le bouton se connecter
      And je navige vers le menu departement
      And je click sur le button ajouter departement
-     And ajouter le nom de le departement "proservice departement abcds"
+     And ajouter le nom de le departement "proservice departement test 10"
      And je choisir un agence
      And je click le button ajouter departement
      And je click ok 

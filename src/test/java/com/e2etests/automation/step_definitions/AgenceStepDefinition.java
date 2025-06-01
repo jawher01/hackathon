@@ -1,10 +1,10 @@
 package com.e2etests.automation.step_definitions;
 
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
+
 
 import com.e2etests.automation.page_objects.AgencePage;
-import com.e2etests.automation.page_objects.AuthenticationPage;
+
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

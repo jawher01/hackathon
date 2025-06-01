@@ -1,6 +1,6 @@
 package com.e2etests.automation.step_definitions;
 
-import com.e2etests.automation.page_objects.AgencePage;
+
 import com.e2etests.automation.page_objects.DepartementPage;
 
 import io.cucumber.java.en.When;
@@ -26,7 +26,7 @@ public class DepartementStepDefinition {
 	
 	@When("ajouter le nom de le departement {string}")
 	public void ajouterLeNomDeLeDepartement(String txt) {
-		departementPage.FillNameAgence(txt);
+		departementPage.FillNameDepartement(txt);
 	}
 	
 	@When("je choisir un agence")
